@@ -6,6 +6,22 @@ def factorial(n):
     return n * factorial(n - 1)  # Recursive call
 
 print(factorial(5))  # Output: 120
+
+Dry Run of factorial(3)
+Call Stack (Top → Bottom)	Value Being Returned
+factorial(3)	3 * factorial(2)
+factorial(2)	2 * factorial(1)
+factorial(1)	1 * factorial(0)
+factorial(0)	1 (base case)
+Now returning back:
+
+factorial(1) → 1 * 1 = 1
+
+factorial(2) → 2 * 1 = 2
+
+factorial(3) → 3 * 2 = 6
+
+🟩 Final Answer = 6
 ===============================================
 
         2. Fibonacci Series (Recursive)
