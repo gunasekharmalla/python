@@ -13,3 +13,28 @@ Problem 1:
         if i < mini:
             mini = i 
     print(maxi,mini)
+
+Problem 2: Second Largest and Second Smallest Element
+Input: [12, 35, 1, 10, 34, 1]
+Output: Second Largest: 34, Second Smallest: 10
+#Program:
+
+    arr =[12,35,1,10,34,1]
+    arr.sort()
+    large =arr[-1]
+    small = arr[0]
+    for right in range(len(arr)-2,-1,-1):
+        if arr[right] == large:
+            continue 
+        else:
+            print("smax=",arr[right])
+            break
+    
+    for right in range(1,len(arr)):
+        if arr[right] == small:
+            continue
+        else:
+            print("ssmall=",arr[right])
+            break
+        
+
