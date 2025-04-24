@@ -41,3 +41,13 @@ student["marks"] = 98
 
 5. Deleting a Key-Value Pair
 del student["grade"]
+
+Useful Dictionary Methods
+==========================================
+Method	Description	Example
+.get(key)	      Returns value or None if not found	student.get("name")
+.keys()	        Returns all keys	student.keys()
+.values()	      Returns all values	student.values()
+.items()	      Returns all key-value pairs	student.items()
+.update({...})	Updates dictionary with new pairs	student.update({"age": 20})
+.pop(key)	      Removes and returns value	student.pop("name")
