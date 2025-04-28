@@ -2,9 +2,6 @@ Problem 1:
     Find the Largest and Smallest Element in an Array
     Problem Statement:
     Given an array of integers, find the smallest and largest elements.
-    Example:
-    Input: [3, 5, 1, 2, 4, 8]
-    Output: Smallest: 1, Largest: 8
     #program:
     maxi, mini = float('-inf'),float('inf')
     for i in nums:
@@ -14,9 +11,11 @@ Problem 1:
             mini = i 
     print(maxi,mini)
 
+ Example:
+    Input: [3, 5, 1, 2, 4, 8]
+    Output: Smallest: 1, Largest: 8
+=================================================================================
 Problem 2: Second Largest and Second Smallest Element
-Input: [12, 35, 1, 10, 34, 1]
-Output: Second Largest: 34, Second Smallest: 10
 #Program:
 
     arr =[12,35,1,10,34,1]
@@ -36,5 +35,24 @@ Output: Second Largest: 34, Second Smallest: 10
         else:
             print("ssmall=",arr[right])
             break
-        
+            
+Input: [12, 35, 1, 10, 34, 1]
+Output: Second Largest: 34, Second Smallest: 10
+=================================================================
+problem 3: Check if an Array is Sorted
+arr = [1, 2, 3, 4, 5, 1]
+b = True
 
+for i in range(1, len(arr)):
+    if arr[i] < arr[i - 1]:
+        b = False
+        break
+        
+print(b)
+
+Input: [1, 2, 3, 4, 5]
+Output: True
+
+Input: [1, 3, 2, 4, 5]
+Output: False
+====================================================================
