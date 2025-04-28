@@ -17,8 +17,6 @@ Problem 1:
 =================================================================================
 Problem 2: Second Largest and Second Smallest Element
 #Program:
-
-    arr =[12,35,1,10,34,1]
     arr.sort()
     large =arr[-1]
     small = arr[0]
@@ -35,7 +33,28 @@ Problem 2: Second Largest and Second Smallest Element
         else:
             print("ssmall=",arr[right])
             break
-            
+
+Optimized algorithm for finding second_smallest and second_largest
+
+largest = second_largest = float('-inf')
+smallest = second_smallest = float('inf')
+for num in arr:
+    # Find largest and second largest
+    if num > largest:
+        second_largest = largest
+        largest = num
+    elif num > second_largest and num != largest:
+        second_largest = num
+    # Find smallest and second smallest
+    if num < smallest:
+        second_smallest = smallest
+        smallest = num
+    elif num < second_smallest and num != smallest:
+        second_smallest = num
+
+print("Second Largest:", second_largest)
+print("Second Smallest:", second_smallest)
+
 Input: [12, 35, 1, 10, 34, 1]
 Output: Second Largest: 34, Second Smallest: 10
 =================================================================
