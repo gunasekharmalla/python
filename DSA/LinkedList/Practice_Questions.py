@@ -22,4 +22,16 @@ Basic:
     10 → 20 → 30 → None
     becomes
     30 → 20 → 10 → None
+ 
+6. 🧩 Problem:
+You are given two singly linked lists representing two non-negative integers.
+The digits are stored in forward order (i.e., most significant digit first).
+Return the sum as a linked list in the same format.
+---
+
+✅ Strategy:
+1. Reverse both input lists.
+2. Add them like we did earlier.
+3. Reverse the result.
+
 
