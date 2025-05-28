@@ -1,1 +1,2 @@
-1.  https://leetcode.com/problems/group-anagrams/  => group anagrams 49
+1.  https://leetcode.com/problems/group-anagrams/  => group anagrams (leetcode49)
+2.  https://leetcode.com/problems/valid-anagram    => valid anagram (leetcode242)
