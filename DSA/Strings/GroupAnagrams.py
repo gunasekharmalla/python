@@ -31,5 +31,17 @@ Input:
 Final Output:
 
 [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
+==================================================================
+#using built in function default dictionary
 
+from collections import defaultdict
+
+def groupAnagrams(strs: list[str]) -> list[list[str]]:
+    anagrams = defaultdict(list)  # automatically creates empty list for new keys
+
+    for word in strs:
+        key = ''.join(sorted(word))  # sort word to create key
+        anagrams[key].append(word)   # add original word to that key’s list
+
+    return list(anagrams.values())  # return all grouped anagrams
 
