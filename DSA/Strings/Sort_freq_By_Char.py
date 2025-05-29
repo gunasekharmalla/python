@@ -82,3 +82,10 @@ Counting → O(n)
 Sorting → O(k log k), where k = number of unique chars (≤ 26 for lowercase)
 
 Result Construction → O(n)
+=========================
+tip: using counter 
+from collections import Counter
+
+def frequencySort(s: str) -> str:
+    count = Counter(s)
+    return ''.join(char * freq for char, freq in count.most_common())
