@@ -1,4 +1,4 @@
-                                ⚒️ Greedy Problem 4: Fractional Knapsack
+                                ⚒️ Greedy Problem : Fractional Knapsack
 💡 Problem Statement:
 You are given:
 n items
